@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+div {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+
+  animation-name: moving;
+  animation-duration: 3s;
+
+  /* kontrolloi mihin jää */
+  animation-fill-mode: forwards;
+}
+
+/* 
+
+funktio periaaateessa
+
+@keyframes moving {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(1000px);
+  }
+} */
+
+@keyframes moving {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(1000px);
+  }
+
+  100% {
+    transform: translate(1000px, 500px);
+  }
+}
